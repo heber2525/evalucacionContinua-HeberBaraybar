@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primario: #5cb6ff;
+  --color-hover: #305a7b;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 60px;
+}
+.menu {
+  display: flex;
+  padding-right: 50px;
+  margin-left: auto;
+  align-items: center;
+  gap: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primario);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.foto-heber img {
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
+}
+a:hover {
+  color: var(--color-hover);
+  transform: rotate(-5deg);
+}
+
+.github-pic {
+  height: 37.6px;
+  width: auto;
+}
+
+.portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 550px;
+  margin-top: 40px;
+}
+.portada img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+.portada h1 {
+  color: white;
+  position: absolute;
+  font-size: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 200;
+}
+.marca {
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+.marca p {
+  color: var(--color-primario);
+}
