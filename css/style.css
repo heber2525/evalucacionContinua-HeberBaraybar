@@ -133,13 +133,14 @@ a:hover {
   font-size: 18px;
 }
 .contenedor-certificaciones {
-  margin-top: 20px;
+  margin-top: 150px;
   position: relative;
+  min-height: 600px;
 }
 .contenedor-certificaciones img {
   position: absolute;
   width: 70%;
-  height: 500px;
+  min-height: 500px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -165,4 +166,40 @@ a:hover {
   text-align: left;
   justify-content: center;
   z-index: 3;
+}
+.lenguajes {
+  padding: 30px 30px 30px 30px;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 180px;
+}
+.lenguajes p {
+  color: var(--color-primario);
+}
+.lenguajes-fila1 {
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-start;
+}
+.lenguajes-fila1 p {
+  padding-left: 90px;
+  padding-right: 80px;
+}
+.lenguajes-fila2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.lenguajes-fila2 p {
+  padding-top: 30px;
+  padding-left: 140px;
+  padding-right: 40px;
+}
+footer {
+  color: black;
+  text-align: center;
+  padding-bottom: 20px;
+}
+footer a {
+  color: black;
 }
