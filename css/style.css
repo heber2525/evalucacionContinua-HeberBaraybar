@@ -93,6 +93,7 @@ a:hover {
   width: 100%;
   height: auto;
   object-fit: contain;
+  opacity: 0.5;
 }
 .foto-heber-about {
   top: 60%;
@@ -116,7 +117,7 @@ a:hover {
   font-size: 80px;
 }
 .contenedor-texto {
-  margin-top: 110px;
+  margin-top: 60px;
   width: 50%;
 }
 .texto-about {
@@ -132,17 +133,17 @@ a:hover {
   font-size: 18px;
 }
 .contenedor-certificaciones {
-  background-color: red;
-  margin-top: 50px;
+  margin-top: 20px;
   position: relative;
 }
 .contenedor-certificaciones img {
   position: absolute;
   width: 70%;
-  height: 400px;
+  height: 500px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  opacity: 0.6;
 }
 .contenedor-certificaciones h2 {
   position: absolute;
@@ -150,4 +151,18 @@ a:hover {
   top: 10%;
   font-size: 70px;
   z-index: 2;
+}
+.texto-certificaciones {
+  position: relative;
+  top: 80px;
+  left: 50%;
+  transform: translate(50%, 50%);
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, auto);
+  gap: 50px 120px;
+  width: 80px;
+  text-align: left;
+  justify-content: center;
+  z-index: 3;
 }
