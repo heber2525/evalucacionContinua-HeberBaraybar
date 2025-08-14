@@ -113,7 +113,7 @@ a:hover {
   top: 10%;
   left: 30%;
   z-index: 3;
-  font-size: 100px;
+  font-size: 80px;
 }
 .contenedor-texto {
   margin-top: 110px;
@@ -130,4 +130,24 @@ a:hover {
 .texto-about p {
   margin-top: 28px;
   font-size: 18px;
+}
+.contenedor-certificaciones {
+  background-color: red;
+  margin-top: 50px;
+  position: relative;
+}
+.contenedor-certificaciones img {
+  position: absolute;
+  width: 70%;
+  height: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.contenedor-certificaciones h2 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  font-size: 70px;
+  z-index: 2;
 }
