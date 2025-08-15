@@ -370,13 +370,28 @@ h3 {
   text-align: center;
   width: 80%;
   margin-bottom: 10px;
-  color: var(--color-secundario);
 }
 footer {
   display: flex;
   gap: 100px;
   padding-bottom: 20px;
   padding-left: 100px;
-  padding-top: 50px;
-  color: var(--color-primario);
+  padding-top: 120px;
+  color: var(--color-secundario);
+}
+footer a {
+  text-decoration: none;
+  color: var(--color-secundario);
+}
+.privacidad {
+  text-align: left;
+  width: 50%;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+.privacidad h2 {
+  text-align: center;
+}
+.privacidad p {
+  padding-top: 30px;
 }
