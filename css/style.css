@@ -6,6 +6,7 @@
 :root {
   --color-primario: #5cb6ff;
   --color-hover: #305a7b;
+  --fuente-primaria: 'Open Sans', sans-serif;
 }
 nav {
   display: flex;
@@ -47,13 +48,13 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 550px;
+  height: 500px;
   margin-top: 40px;
+  opacity: 0.8;
 }
 .portada img {
   max-width: 100%;
   max-height: 100%;
-  height: auto;
 }
 .portada h1 {
   color: white;
@@ -62,14 +63,7 @@ a:hover {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 200;
 }
-.marca {
-  text-align: left;
-  padding-left: 50px;
-  padding-bottom: 20px;
-}
-.marca p {
-  color: var(--color-primario);
-}
+
 .contenedor-about {
   display: flex;
   flex-direction: row;
@@ -168,13 +162,21 @@ a:hover {
   z-index: 3;
 }
 .lenguajes {
-  padding: 30px 30px 30px 30px;
   width: 80%;
   margin: 0 auto;
-  min-height: 180px;
 }
 .lenguajes p {
+  padding: 0;
+  margin: 0;
   color: var(--color-primario);
+  transition: transform 0.6s ease, color 0.3s ease;
+  transform-origin: center;
+  display: inline-block;
+}
+.lenguajes p:hover {
+  color: var(--color-hover);
+  transform: rotateY(360deg);
+  cursor: pointer;
 }
 .lenguajes-fila1 {
   display: flex;
@@ -182,8 +184,7 @@ a:hover {
   justify-content: flex-start;
 }
 .lenguajes-fila1 p {
-  padding-left: 90px;
-  padding-right: 80px;
+  margin: 50px 90px 40px 90px;
 }
 .lenguajes-fila2 {
   display: flex;
@@ -191,15 +192,125 @@ a:hover {
   font-size: 20px;
 }
 .lenguajes-fila2 p {
-  padding-top: 30px;
-  padding-left: 140px;
-  padding-right: 40px;
+  margin-left: 140px;
 }
 footer {
-  color: black;
-  text-align: center;
+  display: flex;
+  gap: 100px;
   padding-bottom: 20px;
+  padding-left: 100px;
+  padding-top: 50px;
+  color: var(--color-primario);
 }
-footer a {
-  color: black;
+.contacto {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  height: 500px;
+}
+
+.contenedor-fotos h3 {
+  font-family: var(--fuente-primaria);
+  font-weight: 100;
+  width: 70%;
+}
+.fotos-redes {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 70px;
+  padding-top: 80px;
+  justify-content: flex-start;
+}
+.fotos-redes img {
+  width: 35px;
+  height: 35px;
+}
+
+.contenedor-fotos h2 {
+  font-size: 80px;
+  font-family: var(--fuente-primaria);
+}
+
+.linkedin {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.linkedin span {
+  font-weight: bold;
+  font-size: 13px;
+  position: relative;
+  top: 15px;
+}
+.instagram {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.instagram span {
+  font-weight: bold;
+  font-size: 13px;
+  position: relative;
+  top: 15px;
+  color: #e1306c;
+}
+.twiter {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.twiter span {
+  font-weight: bold;
+  font-size: 13px;
+  position: relative;
+  top: 15px;
+  color: var(--color-primario);
+}
+.github {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.github span {
+  font-weight: bold;
+  font-size: 13px;
+  position: relative;
+  top: 15px;
+  color: var(--color-primario);
+}
+.formulario-contacto {
+  width: 50%;
+}
+.formulario-contacto h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  width: 60%;
+  margin: 0 auto;
+}
+input,
+textarea {
+  border-color: var(--color-primario);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+button {
+  width: 100px;
+  background-color: var(--color-primario);
+  color: white;
+  border-color: var(--color-primario);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 5px;
+  align-self: self-end;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+button:hover {
+  color: var(--color-hover);
+  transform: rotate(-5deg);
 }
