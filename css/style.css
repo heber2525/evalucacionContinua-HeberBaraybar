@@ -608,59 +608,48 @@ footer a {
   .portfolio {
     display: flex;
   }
+  .portfolio-texto {
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    z-index: 4;
+  }
   .foto-portada-portfolio {
     position: relative;
     z-index: 1;
   }
   .foto-portada-portfolio img {
-    width: 90%;
-    height: auto;
-    object-fit: contain;
-    opacity: 0.6;
+    width: 100%;
   }
   .lenguajes-sobre-foto {
-    position: absolute;
-    display: flex;
-    position: absolute;
-    z-index: 2;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 30px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: var(--color-secundario);
+    display: none;
   }
 
-  .portfolio-texto {
-    text-align: center;
-    margin-top: 80px;
-    padding-left: 100px;
-  }
   .portfolio h2 {
-    padding-top: 50px;
-    font-size: 100px;
-    text-align: left;
-    font-family: var(--fuente-primaria);
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
   }
   h3 {
-    text-align: left;
+    text-align: center;
     width: 100%;
-    font-weight: 200;
-    padding-top: 20px;
+    padding-top: 10px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .fotos-portfolio {
     display: flex;
     height: 300px;
-    padding-top: 120px;
-    width: 80%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+    padding-top: 500px;
+    width: 100%;
+    flex-direction: column;
     text-align: center;
-    gap: 50px;
+    margin-bottom: 530px;
+    gap: 70px;
   }
   .fotos-portfolio div {
     display: flex;
@@ -689,8 +678,7 @@ footer a {
     display: flex;
     gap: 30px;
     width: 100%;
-    background-color: red;
-    padding-top: 60px;
+    padding-top: 40px;
     text-align: center;
   }
   footer p {
