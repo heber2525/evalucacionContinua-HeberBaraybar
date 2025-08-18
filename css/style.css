@@ -492,6 +492,7 @@ footer a {
     border-radius: 3px;
     padding: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: white;
   }
   #desplegable-movil.menu-desplegado {
     display: flex;
@@ -508,6 +509,13 @@ footer a {
   }
   .logo-github {
     display: none;
+  }
+  .portada {
+    min-height: 500px;
+  }
+
+  .portada h2 {
+    font-size: 70px;
   }
   .contenedor-about {
     display: flex;
@@ -674,10 +682,56 @@ footer a {
     color: var(--color-secundario);
   }
 
+  .contenedor-fotos h3 {
+    font-family: var(--fuente-primaria);
+    width: 80%;
+  }
+  .fotos-redes {
+    justify-content: center;
+  }
+
+  .contenedor-fotos h2 {
+    font-size: 60px;
+    text-align: center;
+  }
+  .contacto {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .formulario-contacto {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .formulario-contacto h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: auto;
+  }
+  input {
+    height: 30px;
+  }
+  .formulario-contacto button {
+    width: 100px;
+    align-self: center;
+  }
+  button:hover {
+    color: var(--color-hover);
+    transform: rotate(-5deg);
+  }
+
   footer {
     display: flex;
     gap: 30px;
     width: 100%;
+    margin-top: ;
     padding-top: 40px;
     text-align: center;
   }
