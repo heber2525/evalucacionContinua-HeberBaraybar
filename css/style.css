@@ -3,11 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Istok web regular';
+  src: url('../fuentes/Istok_Web/IstokWeb-Regular.ttf');
+}
+@font-face {
+  font-family: 'Moderustic';
+  src: url('../fuentes/Moderustic/Moderustic-Regular.ttf');
+}
 :root {
   --color-primario: #5cb6ff;
   --color-hover: #305a7b;
   --color-secundario: #899096;
-  --fuente-primaria: 'Open Sans', sans-serif;
+  --fuente-primaria: 'Istok web regular';
+  --fuente-secundaria: 'Moderustic';
 }
 .cabecera {
   display: flex;
@@ -23,7 +32,7 @@
 .menu-desktop a {
   text-decoration: none;
   color: var(--color-primario);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: var(--fuente-primaria);
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -90,7 +99,7 @@
   color: white;
   position: absolute;
   font-size: 100px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--fuente-secundaria);
   font-weight: 200;
 }
 
@@ -134,6 +143,7 @@
   z-index: 14;
   top: 20px;
   font-size: 80px;
+  font-family: var(--fuente-primaria);
 }
 .contenedor-texto {
   width: 50%;
@@ -145,10 +155,12 @@
 }
 .texto-about h3 {
   font-size: 32px;
+  font-family: var(--fuente-secundaria);
 }
 .texto-about p {
   margin-top: 28px;
   font-size: 18px;
+  font-family: var(--fuente-primaria);
 }
 .contenedor-certificaciones {
   margin-top: 150px;
@@ -170,6 +182,7 @@
   top: 10%;
   font-size: 70px;
   z-index: 2;
+  font-family: var(--fuente-primaria);
 }
 .texto-certificaciones {
   position: relative;
@@ -187,6 +200,8 @@
 }
 .texto-certificaciones h3 {
   font-weight: 600;
+  font-family: var(--color-primario);
+  text-align: left;
 }
 .lenguajes {
   width: 80%;
@@ -199,6 +214,7 @@
   transition: transform 0.6s ease, color 0.3s ease;
   transform-origin: center;
   display: inline-block;
+  font-family: var(--fuente-secundaria);
 }
 .lenguajes p:hover {
   color: var(--color-hover);
@@ -212,6 +228,7 @@
 }
 .lenguajes-fila1 p {
   margin: 50px 90px 40px 90px;
+  font-family: var(--fuente-secundaria);
 }
 .lenguajes-fila2 {
   display: flex;
@@ -221,6 +238,7 @@
 .lenguajes-fila2 p {
   margin-left: 140px;
   padding-bottom: 60px;
+  font-family: var(--fuente-secundaria);
 }
 
 .contacto {
@@ -244,6 +262,7 @@
 }
 .fotos-redes a {
   text-decoration: none;
+  font-family: var(--fuente-secundaria);
 }
 .fotos-redes img {
   width: 35px;
@@ -308,6 +327,7 @@
 .formulario-contacto h3 {
   text-align: center;
   margin-top: 20px;
+  font-family: var(--fuente-primaria);
 }
 form {
   display: flex;
@@ -383,6 +403,7 @@ h3 {
   width: 100%;
   font-weight: 200;
   padding-top: 20px;
+  font-family: var(--fuente-secundaria);
 }
 
 .fotos-portfolio {
@@ -395,6 +416,7 @@ h3 {
   justify-content: center;
   text-align: center;
   gap: 50px;
+  margin-bottom: 150px;
 }
 .fotos-portfolio div {
   display: flex;
@@ -417,6 +439,7 @@ h3 {
   width: 80%;
   margin-bottom: 10px;
   color: var(--color-secundario);
+  font-family: var(--fuente-secundaria);
 }
 footer {
   display: flex;
@@ -429,6 +452,7 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--color-secundario);
+  font-family: var(--fuente-secundaria);
 }
 .privacidad {
   text-align: left;
@@ -438,6 +462,7 @@ footer a {
 }
 .privacidad h2 {
   text-align: center;
+  font-family: var(--fuente-secundaria);
 }
 .privacidad p {
   padding-top: 30px;
@@ -470,6 +495,7 @@ footer a {
 .popup-cookies p {
   color: var(--color-primario);
   text-decoration: underline;
+  font-family: var(--fuente-secundaria);
 }
 
 @media screen and (max-width: 767px) {
@@ -731,15 +757,14 @@ footer a {
     display: flex;
     gap: 30px;
     width: 100%;
-    margin-top: ;
     padding-top: 40px;
     text-align: center;
   }
   footer p {
-    color: black;
+    color: var(--color-secundario);
   }
   footer a {
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--color-secundario);
   }
 }
